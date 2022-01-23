@@ -1,32 +1,53 @@
-* Variables: Una variable es una caja donde guardamos cualquier cosa, a esas cosas le llamamos valor,
+* Variables:
+ Una variable es una caja donde guardamos cualquier cosa, a esas cosas le llamamos valor,
  estos valores pueden numeros, pueden ser letras o palabras.
 Dentro de esa cajas podemos cambiar las cosas, cuando es asi le llamamos solamente variable. 
  cuando no se le pueden cambiar su valor, le llamamos contantes.
-*Strings:Viene de el inlgés cuerda, y puede ser una letra o una serie de letras unidas entre si formando palabras o no.
+
+*Strings: 
+Viene de el inlgés cuerda, y puede ser una letra o una serie de letras unidas entre si formando palabras o no.
 las strings tambien pueden un numero o una serie de numeros. Cuando este el caso en programación el numero no
  valor numerico si no mas bien figurativo, es decir no puede sumarse o restarse de otro numero.
 Para diferenciar un numro string de un numro real debe colocarse entre comillas simples o dobles, 
  de la misma manera que se colocan las comillas a los strings de letras o caracteres.
-*Funciones: las funciones son acciones que le decimos al interprete que esta dentro de la computadora
-que debe ejecutar, por ejemplo le puedo pedir a la computadora a través de un interprete que conoce el 
+Por ejemplo 10 (diez) es un numero que puede ser dividido entre 2 y da como resultado 5, pero el string "10"
+no puede ser dividido entre ningun numero, porque no es un numero por si.
+
+*Funciones: 
+Las funciones son acciones que le decimos al interprete que esta dentro de la computadora
+que esta debe ejecutar, por ejemplo le puedo pedir a la computadora a través de un interprete que conoce el 
 lenguaje de programación utilizado que compare dos numeros, que los sume, que compare nombres y que de 
 respuestas pre elaboradas entre muchas otras cosas.
-Las funciones se les da un nombre y a veces se les da argumentos. Cuando la construimos las funciones,
- que tambien se llama declarar una función se escribe en ingles la palabra function, luego separado se escribe 
- el nombre que le queremos dar, a continuación se abren parentsis donde colocaremos los argumentos y 
- finalmente se abren y cierran corchetes donde escribiremos la accion que quiera que haga la función.
- El argumento es la variable que queremos que trabaje la función porque laafunción necesita un valor o varios valores
- para poder hacer sus operaciones y calculos.
+Más especificamente una funcion puede ser compara "esto con aquello", suma "este valor con este otro valor" y muchas 
+otras cosas.
+
+A las funciones se les da un nombre y a veces se les da argumentos. Para  contruir una funcion,
+ el programador debe escribe en inglés la palabra function, luego separado se escribe 
+ el nombre que le queremos dar, por ejemplo compara, suma, multiplica etc. Luego  a continuación se
+ abren parentesis donde colocaremos los argumentos, Los argumentos pueden ser un numeros para ser
+ utilizados en una operación matemática, palabras para ser ordenadas en orden alfabético, datos 
+ para ser comparados.  
+ Una vez cerrados los parentsis del argumento, se abren y cierran corchetes donde escribiremos la accion que quiera
+ que haga la función.
+ El argumento puede ser colocado dentro de los parentesis, separado por comas o pueden ser introducido por espacios reservados
+ por las variables.
+
  *Declaraciones if: Las declaraciones if es la forma de explicar a la computadora las consideraciones que debe 
  tener con respecto a un argumento dado. Se coloca dentro de la funcion que queremos que ejecute. Las declaraciones if 
  se escribe como recien indicamos y le sigue unos parentiesis, dentro de esos parentsis se coloca la observacion que se 
  le debe hacer a la variable, por ejemplo, Si mi variable se llama "a" y quiero que se observe que es mayor que "b" 
  dentro de los parentesis debo colocar a>b. Luego en la misma linea debe abrirse corchetes para decirle a la computaora
- que observó mediante la palabra return. El return da la devolución de la observación. Sin return la funcion no cumple 
+ que observó mediante la palabra return. El return da la devolución de la observación. 
+ ** Sin return la funcion no cumple**
+ Si return no hay cierre de función. 
  su ciclo y no se cierra.
- *Los valores booleanos es un tipo de dato que nos dice si algo es verdadero o cierto, en inglés los valores booleanos son 
+
+ *Los valores booleanos son un tipo de dato que nos dice si algo es verdadero o falso, en inglés los valores booleanos son 
  "true" o "false", estas son respuestas que obtenemos por medio de return, y por ejemplo en el caso anterior nosotros podriamos 
  pedirle a la computadora a traves del interprete que una vez observados y comparados los atributos, nos responda con 
  valores booleanos si es truo o false la comparción de las variables colocadas dentro del argumento de la funcion, es decir 
  es a>b? verdadero o falso?
+
+ **Imaginemos la programación como una convrsación  con una computadora, a ella le damos datos, numericos o no, el interprete le
+  explica lo que le estamos diciendo, ella procesa o analiza la información recibida mediante las funciones y luego nos responde por medio de return que quiere decir... devolución. 
 
