@@ -5,7 +5,21 @@ function obtenerMayor(x, y) {
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
- if(x>y){
+ if (x===y){
+   return x; 
+ }
+ else if (x>y){
+   return x;
+ }
+ else if (x<y){
+   return y;
+ }
+}
+
+/* tambien se puede hacer de la siguiente manera:
+
+function esMayor (x,y){
+  if(x>y){
    return x;
  }
   else if (y>x){
@@ -15,14 +29,16 @@ function obtenerMayor(x, y) {
     return x||y;
   }
  
-   }
-  
+   
+}
+esMayor (11,11);
+*/
    
 
 
 function mayoriaDeEdad(edad) {
   //Determinar si la persona según su edad puede ingresar a un evento.
-  //Si tiene 18 años ó más, devolver --> "
+  //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
   if(edad>=18){
     return "Allowed";
@@ -88,7 +104,7 @@ function colors(color) {
      break;
       
     case "green":
-      return "This is green";
+      return "This is green" ;
       break;
       
     case "orange":
@@ -172,21 +188,21 @@ function operadoresLogicos(num1, num2, num3) {
   //Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false.
-  if(num1===0||num2===0||num3===0){
+  if (num1<0||num2<0||num3<0){
+    return "Hay negativos";
+  }
+  else if (num1===0||num2===0||num3===0){
     return "Error";
-  } 
-    else if(num1<0||num2<0||num3<0){
-      return "Hay negativos";
-  } 
-      else if(num1>num2 && num1>num3 && num1>0){
-        return "Número 1 es mayor y positivo";
-      }
-        else if(num3>num1 && num3>num2){
-          return num3+1;
-        }
-        else{
-          return false;
-        } 
+  }
+  else if (num1>num2&&num1>num3){
+    return "Número 1 es mayor y positivo";
+  }
+  else if (num3>num2 && num3>num2){
+    return num4=num3+1;
+  }
+  else{
+    return false;
+  }
 }
 
 function esPrimo(numero) {
@@ -203,6 +219,8 @@ function esPrimo(numero) {
     }
   }
  {return true;}
+
+
  
 }
 
@@ -224,11 +242,11 @@ function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
-  var arrayPorSeis=[];
-  for(i = 0; i< 11; i ++){
-    arrayPorSeis.push(6*i);
+  let array =[];
+  for (i=0; i<=10; i++){
+    array.push(6*i);
   }
-  return arrayPorSeis;
+  return array;
 }
 
 function tieneTresDigitos(numero){
