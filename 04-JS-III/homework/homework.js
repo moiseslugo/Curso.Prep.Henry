@@ -11,8 +11,7 @@ function devolverPrimerElemento(array) {
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
-  var n = array.length;
-  return array[n-1];
+  return array[array.length-1];
   
 }
 
@@ -29,8 +28,12 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
-  
-}
+  let nuevoArray = [];
+  for (let i = 0; i < array.length;i++){
+    nuevoArray[i]=array[i]+1;
+  }
+  return nuevoArray;
+  }
 
 
 function agregarItemAlFinalDelArray(array, elemento) {
@@ -117,7 +120,7 @@ function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
-  var
+  
 }
 
 
