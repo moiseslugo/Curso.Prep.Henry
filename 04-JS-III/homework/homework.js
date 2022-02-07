@@ -120,6 +120,8 @@ function numeroMasGrande(numeros) {
 } 
 
 
+
+
 function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
@@ -140,7 +142,7 @@ function cuentoElementos(arreglo){
 var retorno = 0;//Se crea la variabe "retorno" igual a "cero" porque asumimos que no hay valores mayors a 18.
 for ( var i = 0; i<arreglo.length; i++){
  if (arreglo[i]>18){
-   retorno++
+   retorno++ //Puede ser retorno = retorno +1
  }
  // Creamos un statement for para recorrer la matriz desde su primer indice.
  // luego le damos la codición de que debe ser mayor a 18. 
@@ -155,7 +157,8 @@ function diaDeLaSemana(numeroDeDia) {
   //Suponga que los días de la semana se codifican como 1 = Domingo, 2 = Lunes y así sucesivamente. 
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
-  //Escribe tu código aquí  
+  //Escribe tu código aquí 
+  //EJERCICIO SIN DUDAS **********
   
   if ( numeroDeDia=== 1 || numeroDeDia ===7){ 
     return "Es fin de semana";
@@ -196,7 +199,7 @@ function todosIguales(arreglo) {
   }
       {return true};
   
-} 
+} // no se compara con si mismo desde cero porque no tiene sentido 
 
 
 function mesesDelAño(array) {
