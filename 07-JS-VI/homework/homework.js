@@ -6,20 +6,25 @@ function mayuscula(nombre) {
   //Tu código:
   return nombre[0].toUpperCase() + nombre.slice(1);
 
-}
+}/*Notas ACA: >Tomamos el string como si fuera un arreglo,
+ de alli la primera letra ocupa el casillero subindice 0 
+ y lo convrtimos en mayuscula con .toUpperCase
+ luego lo sumamos a slice que elimina el primero subindice es decir cero*/
+
+ //otra solución:  return nombre.charAt(0)+nombre.slice(1) . charaAt(0) da como resultado la primera letra del string.
 
 function invocarCallback(cb) {
   // Invoca al callback `cb`
   //Tu código:
   cb();
-}
+}/*Notas ACA*/
 
 function operacionMatematica(n1, n2, cb) {
   //Vamos a recibir una función que realiza una operación matemática como callback junto con dos números.
   //Devolver el callback pasándole como argumentos los números recibidos.
   //Tu código:
   return cb(n1,n2);
-}
+}/*Notas ACA*/
 
 function sumarArray(numeros, cb) {
   // Suma todos los números enteros (int/integers) de un array ("numeros")
@@ -30,7 +35,7 @@ function sumarArray(numeros, cb) {
     return acc + curr;
   },0);
   cb(sumaTotal);
-}
+}/*NOTAS ACA: */
 
 function forEach(array, cb) {
   // Itera sobre la matriz "array" y pasa los valores al callback uno por uno
@@ -40,14 +45,14 @@ function forEach(array, cb) {
      cb(array[i]);
 
    }
-}
+}/*Notas ACA*/
 
 function map(array, cb) {
   // Crea un nuevo array
   // Itera sobre cada valor en "array", pásalo a `cb` y luego ubicar el valor devuelto por `cb` en un nuevo array
   // El nuevo array debe tener la misma longitud que el array del argumento
   //Tu código:
-}
+}/*Notas ACA*/
 
 function filter(array) {
   //Filtrar todos los elementos del array que comiencen con la letra "a".
@@ -63,7 +68,7 @@ function filter(array) {
     
   }
   return nuevoArray;
-}
+}/*Notas ACA*/
 
 // No modificar nada debajo de esta línea
 // --------------------------------
