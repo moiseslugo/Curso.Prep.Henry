@@ -46,6 +46,7 @@ function incrementarPorUno(array) {
      al nuevo array de forma directa. Finalmente devolvemos el nuevo array.
              
      */
+    // otra forma seria con return array++
 
 
 function agregarItemAlFinalDelArray(array, elemento) {
@@ -55,6 +56,7 @@ function agregarItemAlFinalDelArray(array, elemento) {
   array.push(elemento);
   return array;
 }// empujamos el elemento pasad por argumento al final del array.
+// otra forma seria con  return array.push(elemento)
 
 
 
@@ -103,6 +105,7 @@ function arrayContiene(array, elemento) {
   }/* En la solucion de este ejercicio encontramos que return esta dentro del bucle for, esto se debe a que 
   mientras no se cumpla la condicion de igualdad seguirá itrando hasta ser true, de darse la igualdad entonces 
   será true y retornará true. De no cumplirse el true, entonces devolveremos false fuera del ciclo "for".*/ 
+  // otra forma con el metodo .includes Investigar
 
 
 
@@ -149,6 +152,7 @@ entre resultaltadosTest.length, este valor es igual a la cantidad de datos conte
 
 
 
+
 function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
@@ -173,6 +177,7 @@ el array con condicion de parada del ultimo numero de esta, eso lo logramos medi
  Fuera del ciclo for devolvemos el valor de la variable creada con el resultado de la operación de comparación
   que se  encontraba dentro del bucle.
 */
+//otra solucion Math.max.apply(null,numeros).... si corre!
 
 
 
@@ -207,7 +212,8 @@ function multiplicarArgumentos() {
    Finalizado el ciclo, devlvemos el valor de la variable creada por fuera del ciclo for.
   
   */
- 
+ //Falta la condicion de retornar el unico argumento!!!! probar if (arguments.length ===1){Return arguments}
+  
 
 
 function cuentoElementos(arreglo){
@@ -277,6 +283,7 @@ function empiezaConNueve(n) {
  del condiconal.
 
 */
+//Podemos probar este ejercicio con var str = n+"" y charAt(0)
 
 
 function todosIguales(arreglo) {
@@ -301,6 +308,7 @@ function todosIguales(arreglo) {
     de nuevo y asi continúa hasta culminar el ciclo, Si no encontro cumplir con un true dado porque 
     son diferentes los valores, entonces sale del bucle for y ejecuta la linea de codigo que devuelve "true".
        */
+      // Intentar con la siguiente forma Let inicial = arreglo[0], en este caso comparamos con el primer elemento del array y el limite seria length en vez de length-1
 
 
 function mesesDelAño(array) {
@@ -335,6 +343,8 @@ function mesesDelAño(array) {
   Si este condicional es false es decir no se cumple, entonces continaua a la proxima linea de codigo y ejecuta
   la devolución del nuevo array en un else al final de todo el codigo con los tres meses solicitados.
   
+Observaciones del video: Ninguna
+
   */
   
 

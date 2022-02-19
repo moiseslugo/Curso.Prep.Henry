@@ -107,7 +107,7 @@ function colors(color) {
     return "Color not found";
     break;
   }
-  
+  /* Segun el tutor se puede obviar el break ya que usamos return */
 }
 
 function esDiezOCinco(numero) {
@@ -122,12 +122,8 @@ function estaEnRango(numero) {
   // De lo contrario, devuelve "false"
   // Tu código:
  //return (numero<50 && numero>20); otra manera de hacerl es como sigue:
- if ( numero<50 && numero>20){
-   return true;
- }
- else{
-   return false;
- }
+ return  numero<50 && numero>20;
+ // Esta es la solución mas corta sin utilizar if. 
 }
 
 function esEntero(numero) {
@@ -217,7 +213,9 @@ function esPrimo(numero) {
       return true;
 
       
-    }
+    }/*Las primeras expresiones se delcaran por separado con if ya que si es true, ya estamos evaluando un solo 
+    numero, es decir con que el numero no sea primo por ser 2 o n lo sea por ser 0 o 1, automaticamente
+     salimos de la ejecución con dos if. */
 
 
 function esVerdadero(valor){
@@ -258,7 +256,7 @@ function tieneTresDigitos(numero){
    else{
      return false;
    }
-}
+}/* intentar con numero.length*/ 
 
 function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
