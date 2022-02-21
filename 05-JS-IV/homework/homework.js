@@ -65,6 +65,7 @@ function eliminarPropiedad(objeto, unaPropiedad) {
   // Tu código:
   delete objeto[unaPropiedad];
   return objeto;
+  
     }
     /* Primero debemos utilizar la palabra clave delet seguido del objeto al cual
      vamos a llamar unaPropiedad por bracket notation. Por ser una variable pasado
@@ -93,7 +94,7 @@ function tieneEmail(usuario) {
   // De lo contratio, devuelve "false"
   // Tu código:
     
-  if(usuario["email"]){
+  if(usuario.email){
     return true;
   }
   return false;
